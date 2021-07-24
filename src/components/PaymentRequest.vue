@@ -26,7 +26,7 @@
         </v-container>
        <div class="second-row2">
         <v-container>
-           <OrderDetails/>   
+           <order-Details/>   
         </v-container>
        </div>
        <div class="third-row">
@@ -83,7 +83,7 @@
 
 <script>
 import OrderDetails from './Order-details.vue';
-import PaymentMethod from './PaymentMethod.vue'
+import PaymentMethod from './PaymentMethod.vue';
 export default {
   name: 'AppFooter',
   props: {
@@ -91,7 +91,7 @@ export default {
   },
    components: {
        OrderDetails,
-       PaymentMethod
+       PaymentMethod,
    }
 }
 </script>

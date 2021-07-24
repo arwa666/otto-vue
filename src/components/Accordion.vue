@@ -1,9 +1,8 @@
 <template>
-<v-app>
-   <div class="container">
-            <v-expansion-panel  >
+
+            <v-expansion-panel :value="0" >
         <v-expansion-panel-content
-            
+           
             class="green-bg"
         >
             <template v-slot:header>
@@ -45,8 +44,7 @@
             </v-card>
         </v-expansion-panel-content>
      </v-expansion-panel>
-   </div>
-</v-app>
+
 
 </template>
 
@@ -56,7 +54,12 @@ export default {
   name: 'Accordion',
   props: {
     msg: String
-  }
+  },
+  data() {
+ return {
+   panel: [0]
+ }
+}
 }
 </script>
 
@@ -99,5 +102,8 @@ export default {
 }
 .order-desc p{
     margin:0px;
+}
+.v-expansion-panel {
+    margin-bottom: 0px;
 }
 </style>
