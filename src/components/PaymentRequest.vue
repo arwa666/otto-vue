@@ -24,7 +24,7 @@
                 </ul>
            </div>
         </v-container>
-       <div class="second-row2">
+       <div class="second-row2 request">
         <v-container>
            <order-Details/>   
         </v-container>
@@ -100,16 +100,16 @@ export default {
 .application--wrap{
     min-height:auto!important;
 }
-/* .v-expansion-panel__header {
+.request .v-expansion-panel__header {
     padding-inline-start:0px;
 }
-.second-row2 .v-card{
+.request .v-card{
     padding-inline-start:0px;
-} */
-.v-expansion-panel{
+}
+.request .v-expansion-panel{
     margin-bottom: 0px;
 }
-.second-row2 .v-card{
+.request .v-card{
     padding-bottom: 0px;
 }
 </style>
