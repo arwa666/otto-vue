@@ -65,7 +65,8 @@
                         <q class="text-gray">
                           + 1.500 kwd “ fee will be applied  
                         </q>
-                           <a href="#0" class="pay-btn">Pay (13.500 KED)</a>
+                          
+                           <router-link  to="/successful_payment" class="pay-btn">Pay (13.500 KED)</router-link>
                      <div class="terms text-gray">
                          By clicking Pay button you are accepting our <span>Terms & Conditions</span>
                      </div>
@@ -104,12 +105,12 @@ export default {
     padding-inline-start:0px;
 }
 .request .v-card{
-    padding-inline-start:0px;
+    padding-inline-start:0px!important;
 }
 .request .v-expansion-panel{
-    margin-bottom: 0px;
+    margin-bottom: 0px!important;
 }
 .request .v-card{
-    padding-bottom: 0px;
+    padding-bottom: 0px!important;
 }
 </style>

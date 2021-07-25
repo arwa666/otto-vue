@@ -2,7 +2,9 @@
     <header>
         <v-container class=" header__div">
             <div class="logo">
-                <img src="images/logo.png" alt="logo img">
+                <router-link to = "/">
+                    <img src="images/logo.png" alt="logo img">
+                </router-link>
             </div>
             <div class="language-toggler">
                 <a href="#0">بالعربي</a>
