@@ -65,11 +65,7 @@
                         <q class="text-gray">
                           + 1.500 kwd “ fee will be applied  
                         </q>
-                     <a href="#0" class="pay-btn">
-                        
-                             Pay (13.500 KED)
-                         
-                     </a>
+                           <a href="#0" class="pay-btn">Pay (13.500 KED)</a>
                      <div class="terms text-gray">
                          By clicking Pay button you are accepting our <span>Terms & Conditions</span>
                      </div>
