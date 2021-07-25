@@ -10,7 +10,8 @@
           <div class="triangle"></div>
           </div>
           <div class="image-container">
-              <img src="../assets/images/f1.png" alt="">
+              <v-img src="images/f1.png" alt="" class="image-container__img">
+              </v-img>
           </div>
           <span class="b-price">+1.000</span>
     </div>
@@ -20,7 +21,8 @@
             <div class="triangle"></div>
             </div>
             <div class="image-container">
-            <img src="../assets/images/paypal.png" alt="">
+            <v-img src="images/paypal.png" alt="" class="image-container__img">
+            </v-img>
          </div>
          <span class="b-price">+1.800</span>
     </div>
@@ -30,7 +32,8 @@
             <div class="triangle"></div>
         </div>
         <div class="image-container">   
-            <img src="../assets/images/f1.png" alt="">
+            <v-img src="images/f1.png" alt="" class="image-container__img">
+            </v-img>
         </div>
         <span class="b-price ">+1.500</span>
     </div>
@@ -40,7 +43,8 @@
         <div class="triangle"></div>
       </div>
       <div class="image-container">
-        <img src="../assets/images/knet.png" alt="">
+        <v-img src="images/knet.png" alt="" class="image-container__img">
+        </v-img>
       </div>
        <span class="b-price ">+0.500</span>
       </div>
@@ -50,7 +54,8 @@
               <div class="triangle"></div>
           </div>
           <div class="image-container">
-              <img src="../assets/images/visa.png" alt="">
+              <v-img src="images/visa.png" alt="" class="image-container__img">
+              </v-img>
           </div>
           <span class="b-price">+0.000</span>
       </div>
@@ -60,7 +65,8 @@
               <div class="triangle"></div>
           </div>
           <div class="image-container">
-              <img src="../assets/images/knet.png" alt="">
+              <v-img src="images/knet.png" alt="" class="image-container__img">
+              </v-img>
           </div>
               <span class="b-price">+0.500</span>
       </div>
@@ -70,7 +76,8 @@
               <div class="triangle"></div>
           </div>
           <div class="image-container">
-             <img src="../assets/images/f2.png" alt="">
+             <v-img src="images/f2.png" alt="" class="image-container__img">
+             </v-img>
           </div>
           <span class="b-price">+1.800</span>
       </div>
@@ -93,7 +100,8 @@ export default {
                 slidesToScroll: 1,
                 centerMode: true,
                 centerPadding: '70px',
-                arrows:false
+                arrows:false,
+                infinite:true
             },
         };
     },
@@ -116,7 +124,7 @@ body{
   background-color: #eee;
   font-family: 'Poppins', sans-serif;
 }
-.slick-slide img {
+.slick-slide .image-container__img {
     max-width: 100%;
     width: 75px;
     height: 75px;
@@ -225,7 +233,7 @@ body{
 }
 @media (max-width: 480px)
 {
-.slick-slide img {
+.slick-slide .image-container__img {
     max-width: 100%;
     /* width: 38px;
     height: 38px; */

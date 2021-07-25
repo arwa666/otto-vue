@@ -1,12 +1,13 @@
 <template>
-    <footer>
+    <v-footer>
       <v-container> 
         <div class="socials">
            
             
             <a href="#0">
-                <i class="fab fa-twitter"></i>
+              <i class="fab fa-twitter"></i>
             </a>
+            <v-icon>mdi-twitter</v-icon>
             <a href="#0"><i class="fab fa-facebook-f" ></i></a>
            <a href="" class="snap"> <i class="fab fa-snapchat-ghost"  ></i></a>
            <a href="#0"><i class="fab fa-instagram"></i></a>
@@ -14,7 +15,7 @@
           
         </div>
          </v-container>
-    </footer>
+    </v-footer>
 </template>
 
 <script>

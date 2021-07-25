@@ -8,7 +8,8 @@
         >
             <template v-slot:header>
                     <div class="text-left">
-                           <img src="images/order-description.png" alt="" class="order__img">
+                           <v-img src="images/order-description.png" alt="" class="order__img">
+                           </v-img>
                        </div>
                       <div class="order-desc">
                         <p class="text-left bold black-20 ">
@@ -18,46 +19,66 @@
             </template>
             <v-card>
                      <div class="first">
-                            <ul class="list-unstyled">
-                                <li>
-                                    Order No
-                                </li>
-                                <li>
-                                    1234567
-                                </li>
-                            </ul>
-                            <ul class="list-unstyled">
-                                <li>
-                                    Order ipsum
-                                </li>
-                                <li>
-                                    <p>
-                                        Lorem ipsum dolor
-                                    </p>
-                                    <p>
-                                        Lorem ipsum dolor
-                                    </p>
-                                </li>
-                            </ul>
-                            <ul class="list-unstyled">
+
+                            <v-list two-line>
+                            <template>
+
+
+                                <v-list-tile-content>
+                                    <v-list-tile-title>Order No</v-list-tile-title>
+                                    <v-list-tile-sub-title >  1234567</v-list-tile-sub-title>
+                                </v-list-tile-content>
+                            
+                            </template>
+                            </v-list>
+
+                            
+                            <v-list two-line>
+                            <template>
+                                <v-list-tile-content>
+                                    <v-list-tile-title> Order ipsum</v-list-tile-title>
+                                    <v-list-tile-sub-title > 
+                                        <p>
+                                            Lorem ipsum dolor
+                                        </p>
+                                        <p>
+                                            Lorem ipsum dolor
+                                        </p></v-list-tile-sub-title>
+                                </v-list-tile-content>
+                            </template>
+                            </v-list>
+                            <!-- <ul class="list-unstyled">
                                 <li>
                                     Lorem ipsum
                                 </li>
                                 <li>
                                     Lorem ipsum dolor
                                 </li>
-                            </ul>
-                            <ul class="list-unstyled">
-                                <li>
-                                    Lorem ipsum
-                                </li>
-                                <li>
-                                    Lorem ipsum dolor
-                                </li>
-                            </ul>
+                            </ul> -->
+
+                            <v-list two-line>
+                            <template>
+                                <v-list-tile-content>
+                                    <v-list-tile-title>  Lorem ipsum</v-list-tile-title>
+                                    <v-list-tile-sub-title > 
+                                         Lorem ipsum dolor
+                                    </v-list-tile-sub-title>
+                                </v-list-tile-content>
+                            </template>
+                            </v-list>
+                            <v-list two-line>
+                            <template>
+                                <v-list-tile-content>
+                                    <v-list-tile-title>  Lorem ipsum</v-list-tile-title>
+                                    <v-list-tile-sub-title > 
+                                         Lorem ipsum dolor
+                                    </v-list-tile-sub-title>
+                                </v-list-tile-content>
+                            </template>
+                            </v-list>
                         </div>
                         <div class="second">
-                            <ul class="list-unstyled">
+                            <!-- <ul class="list-unstyled">
                                 <li class="black-20 bold">
                                     <i class="far fa-calendar-alt" ></i> <span>Date</span>
                                 </li>
@@ -67,15 +88,34 @@
                                         Internal ID
                                     </span>
                                 </li>
-                            </ul>
-                            <ul class="list-unstyled">
-                                <li class="padding-left">
-                                    2021-04-06
-                                </li>
-                                <li  class="padding-left">
-                                   123456789098765432
-                                </li>
-                            </ul>
+                            </ul> -->
+                            <v-list>
+                                <template>
+                                    <v-list-tile-content>
+                                        <v-list-tile-title  class="black-20 bold">  
+                                            <i class="far fa-calendar-alt" ></i> <span>Date</span>
+                                        </v-list-tile-title>
+                                        <v-list-tile-sub-title   class="black-20 bold"> 
+                                            <i class="far fa-id-card" ></i> 
+                                            <span>
+                                                Internal ID
+                                            </span>
+                                        </v-list-tile-sub-title>
+                                    </v-list-tile-content>
+                                </template>
+                            </v-list>
+                            <v-list>
+                                <template>
+                                    <v-list-tile-content>
+                                        <v-list-tile-title class="padding-left">  
+                                             2021-04-06
+                                        </v-list-tile-title>
+                                        <v-list-tile-sub-title class="padding-left" > 
+                                            123456789098765432
+                                        </v-list-tile-sub-title>
+                                    </v-list-tile-content>
+                                </template>
+                            </v-list>
                         </div>
             </v-card>
         </v-expansion-panel-content>
@@ -139,5 +179,42 @@ export default {
 }
 .theme--light.v-expansion-panel .v-expansion-panel__container{
     background-color: transparent;
+}
+.first .v-list__tile__content{
+    display: flex;
+    flex-direction: row;
+}
+.second .v-list__tile__content{
+    display: flex;
+    flex-direction: row;
+}
+.first .v-list__tile__title{
+    width:50%;
+}
+.second .v-list__tile__title{
+    width:50%;
+}
+.first .v-list__tile__sub-title{
+    width:50%;
+    color: rgba(0,0,0,.87)!important;
+}
+.second .v-list__tile__sub-title{
+    width:50%;
+    color: rgba(0,0,0,.87)!important;
+}
+.first .theme--light.v-list{
+    background-color: transparent;
+}
+.second .theme--light.v-list{
+    background-color: transparent;
+}
+.first .v-list {
+    padding:0px;
+}
+.first .v-list__tile__sub-title p{
+    margin-bottom:5px;
+}
+.first .v-list__tile__sub-title p{
+    margin-bottom:5px;
 }
 </style>

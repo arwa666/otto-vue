@@ -2,7 +2,8 @@
     <section class="page-content">
         <v-container>
             <div class="first-row2 text-center">
-             <img src="images/success.png" alt="" class="success-logo">
+             <v-img src="images/success.png" alt="" class="success-logo">
+             </v-img>
               <p class="green-c status-text">
                   Thank you!
               </p>
@@ -19,18 +20,20 @@
        </div>
        <div class="third-row2">
             <v-container>
-                <a href="#0" class="oto-btn bg-orange">
-                    <img src="images/attachment.png" alt="">
+                <v-btn class="oto-btn bg-orange">
+                    <v-img src="images/attachment.png" alt="" class="otto-btn__img">
+                    </v-img>
                     <span>
                         Download Receipt
                     </span>
-                </a>
-                <a href="#0" class="oto-btn bg-gray">
-                    <img src="images/receipt.png" alt="">
+                </v-btn>
+                <v-btn  class="oto-btn bg-gray">
+                    <v-img src="images/receipt.png" alt="" class="otto-btn__img">
+                    </v-img>
                     <span>
                         Download Attachment
                     </span>
-                </a>
+                </v-btn>
             </v-container>
        </div>
     </section>

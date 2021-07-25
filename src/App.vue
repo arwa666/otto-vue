@@ -16,18 +16,21 @@
 import AppHeader from './components/AppHeader.vue';
 import AppFooter from './components/AppFooter.vue';
 // import FailedPayment from './components/FailedPayment.vue';
-import PaymentRequest from './components/PaymentRequest.vue'
+// import PaymentRequest from './components/PaymentRequest.vue'
 
 export default {
   name: 'App',
   components: {
     AppHeader,
     AppFooter,
-   PaymentRequest
+  //  PaymentRequest
   }
 }
 </script>
 
 <style>
-
+ body{
+   margin:0px;
+   padding:0px;
+ }
 </style>
