@@ -100,12 +100,12 @@ export default {
 .application--wrap{
     min-height:auto!important;
 }
-.v-expansion-panel__header {
+/* .v-expansion-panel__header {
     padding-inline-start:0px;
 }
 .second-row2 .v-card{
     padding-inline-start:0px;
-}
+} */
 .v-expansion-panel{
     margin-bottom: 0px;
 }
