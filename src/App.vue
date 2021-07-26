@@ -5,8 +5,8 @@
     <!-- <router-view/> -->
     <!-- <PaymentRequest/> -->
     <!-- <SuccessfulPayment/> -->
-    <!-- <FailedPayment/> -->
-    <router-view/>
+    <FailedPayment/>
+    <!-- <router-view/> -->
     <!-- <TermsConditions/> -->
     <AppFooter/>
   </div>
@@ -17,7 +17,7 @@
 import AppHeader from './components/AppHeader.vue';
 import AppFooter from './components/AppFooter.vue';
 // import TermsConditions from './components/TermsConditions.vue'
-// import FailedPayment from './components/FailedPayment.vue';
+import FailedPayment from './components/FailedPayment.vue';
 // import PaymentRequest from './components/PaymentRequest.vue'
 
 export default {
@@ -25,6 +25,7 @@ export default {
   components: {
     AppHeader,
     AppFooter,
+    FailedPayment
     // TermsConditions
   //  PaymentRequest
   }
