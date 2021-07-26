@@ -81,7 +81,8 @@
                           
                            <router-link  to="/successful_payment" class="pay-btn">Pay (13.500 KED)</router-link>
                      <div class="terms text-gray">
-                         By clicking Pay button you are accepting our <router-link to ='/failed_payment'><span>Terms & Conditions</span></router-link>
+                         By clicking Pay button you are accepting our 
+                         <TermsConditions/>
                      </div>
                 </v-container>
            
@@ -92,6 +93,7 @@
 <script>
 import OrderDetails from './Order-details.vue';
 import PaymentMethod from './PaymentMethod.vue';
+import TermsConditions from './TermsConditions.vue';
 export default {
   name: 'AppFooter',
   props: {
@@ -100,6 +102,7 @@ export default {
    components: {
        OrderDetails,
        PaymentMethod,
+       TermsConditions
    }
 }
 </script>
