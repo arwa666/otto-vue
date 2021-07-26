@@ -27,5 +27,8 @@ export default {
 <style >
     .v-toolbar__content{
         height:unset!important;
+        display:flex;
+        justify-content:center;
     }
+   
 </style>
