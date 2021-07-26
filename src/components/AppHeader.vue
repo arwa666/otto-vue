@@ -30,5 +30,17 @@ export default {
         display:flex;
         justify-content:center;
     }
-   
+   @media only screen and (min-width: 960px)
+    {
+        .container {
+            max-width: 800px;
+        }
+    }
+@media only screen and (min-width: 1264px)
+    {
+        .container {
+            max-width: 800px;
+        }
+    }
+
 </style>
